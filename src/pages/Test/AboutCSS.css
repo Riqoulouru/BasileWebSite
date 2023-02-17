@@ -1,0 +1,33 @@
+.root {
+    background-color: #2f2f2f;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.imgBasile {
+    margin: auto;
+    width: 30vh;
+    border-radius: 53% 47% 33% 67% / 61% 66% 34% 39%;
+}
+
+.me {
+    color: #cacaca;
+}
+
+.text {
+    color: #616161;
+    line-height: 50%;
+    font-size: 1.4em;
+}
+
+a {
+    box-shadow: inset 0 0 0 0 #9a9a9a;
+    color: #616161;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.text a:hover {
+    box-shadow: inset 250px 0 0 0 #9a9a9a;
+    color: #616161;
+}

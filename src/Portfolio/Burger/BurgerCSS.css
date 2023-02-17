@@ -1,0 +1,67 @@
+.burger {
+    top: 35px;
+    right: 35px;
+    color: #cacaca;
+    position: fixed;
+    z-index: 1001;
+    animation: slideInFromRight .5s ease-in-out;
+}
+
+/* Style pour la boîte de navigation */
+.nav-box {
+    position: fixed;
+    padding: 10% 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    transition: top .5s ease-in-out;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Met la boîte par-dessus les autres éléments sauf le burger*/
+}
+
+
+.nav-box a {
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: calc(100% / 4);
+    background-color: rgba(0,0,0,.02);
+    overflow: hidden;
+    align-items: center;
+    vertical-align: center;
+}
+
+.nav-box a span{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+    height: 100%;
+    color: #606060;
+    line-height: 50%;
+    font-size: 1.4em;
+    margin: auto;
+}
+
+.nav-box .selected{
+    color: #cacaca;
+}
+
+.nav-box a:hover {
+    box-shadow: inset 600px 0 0 #9a9a9a;
+    color: #616161;
+}
+
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
